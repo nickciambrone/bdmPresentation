@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+  <!-- SEO -->
+  <title>WebSlides Tutorial: Videos, Images, and Maps</title>
+  <meta name="description" content="How to embed images, videos, and maps in your presentation.">
+
+  <!-- URL CANONICAL -->
+  <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+    rel="stylesheet">
+
+  <!-- CSS Base -->
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/svg-icons.css">
+
+  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+  <!-- FACEBOOK -->
+  <meta property="og:url" content="/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="WebSlides Tutorial: Media" />
+
+  <!-- EDIT -->
+  <meta property="og:description" content="How to embed images, videos, and maps in your presentation.">
+
+  <!-- EDIT -->
+  <meta property="og:updated_time" content="2017-01-04T17:25:31">
+
+  <!-- EDIT -->
+  <meta property="og:image" content="../static/images/share-webslides.jpg">
+
+  <!-- EDIT -->
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@webslides">
+
+  <!-- EDIT -->
+  <meta name="twitter:creator" content="@jlantunez">
+
+  <!-- EDIT -->
+  <meta name="twitter:title" content="WebSlides Tutorial: Media">
+
+  <!-- EDIT -->
+  <meta name="twitter:description" content="How to embed images, videos, and maps in your presentation.">
+
+  <!-- EDIT -->
+  <meta name="twitter:image" content="../static/images/share-webslides.jpg">
+
+  <!-- EDIT -->
+
+  <!-- FAVICONS -->
+  <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+  <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+  <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+  <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+  <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+  <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+  <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+
+  <!-- Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+
+</head>
+
+<body>
+  <header role="banner">
+    <nav role="navigation">
+      <p class="logo"><a href="../index.html" title="WebSlides">WebSlides</a></p>
+      <ul>
+        <li class="github">
+          <a rel="external" href="https://github.com/webslides/webslides" title="Github">
+            <svg class="fa-github">
+              <use xlink:href="#fa-github"></use>
+            </svg>
+            <em>WebSlides</em>
+          </a>
+        </li>
+        <li class="twitter">
+          <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+            <svg class="fa-twitter">
+              <use xlink:href="#fa-twitter"></use>
+            </svg>
+            <em>@WebSlides</em>
+          </a>
+        </li>
+        <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article id="webslides">
+
+      <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+      <section class="bg-apple aligncenter">
+        <h4>
+
+          Query Optimization and Planning
+        </h4>
+        <h6>Nicholas Ciambrone</h6>
+      </section>
+      <section class="bg-apple ">
+        <div class="wrap size-70">
+
+          <p>
+            A query plan is a set of steps that a computer program executes in order to retrieve specific data from a
+            MySql database
+          </p>
+          <p>Two different query plans can retrieve the same data, and so we must determine which of all the possible
+            query plans is the most efficient.</p>
+          <p>
+            A query can be written in multiple equivalent structures and so we must ask, which structure uses the least
+            system resources?
+          </p>
+          <pre>
+              <img src="/Users/nickciambrone/Desktop/Screen Shot 2019-04-23 at 4.02.25 PM.png" width = 900px alt="">
+            </pre>
+          <p>Query optimization makes the application faster for the user and allows the server to run more efficiently
+          </p>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section class="bg-apple ">
+        <div class="wrap size-60">
+          <h4>
+            <p>There are two ways that a query can be optimized</p>
+            <ol>
+              <li>Transform equivalent queries so that each relation that we operate on has the minimal amout of tuples
+                and columns.
+              </li>
+              <li>Using different algorithms for each operation, the underlying algorithms for each process determine
+                how many tuples are accessed
+                in order to return the correct data. This data retrieval is costly as we must perform disk accesses.
+              </li>
+            </ol>
+          </h4>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section class="bg-apple">
+        <div class="wrap size-70"></div>
+        <ul>
+          <li> Selecting from a relation predicated on 2 conditions is not optimal.
+          </li>
+          <li>Instead it is more efficient to apply the first selection by itself, and then applying the second
+            selection to the table that results from the first selection</li>
+          <li>If we have a table with 20 rows and 4 columns, the left side will evaluate both conditions on all 20 rows.
+          </li>
+          <li>If we instead execute the right query plan, we minimize the amount of tuples that we need to check for the
+            second condition.
+          </li>
+          <li>It is better to first perform the selection that results in the lowest amount of tuples</li>
+        </ul>
+        <pre>
+            <img src="/Users/nickciambrone/Desktop/Screen Shot 2019-04-23 at 4.02.25 PM.png" width = 900px alt="">
+          </pre>
+      </section>
+      <section class="bg-apple ">
+        <div class="wrap size-50">
+          <img src="/Users/nickciambrone/Desktop/Screen Shot 2019-04-23 at 4.26.59 PM.png" width="590px" alt="">
+          <br>
+          <br>
+          <ol>
+            <li>
+              A cascade of projections is not optimal. This is because regardless, the only columnn being projected in
+              the end is the outermost projection.
+            </li>
+            <li>It is better to collapse all of the projection into just one (the right side of this equation)</li>
+          </ol>
+        </div>
+      </section>
+      <section class="bg-apple">
+        <div class="wrap size-50">
+          <ul>
+            <li>When we perform a cartesian product, we match each tuple of the first table with each tuple of the
+              second.</li>
+            <li>If table 1 has n tuples and table 2 has m tuples, the resulting relation has m*n tuples. </li>
+            <li>We then scan the entire resulting relation predicated on the select condition. </li>
+            <li>This is not optimal</li>
+            <li>Instead you can use the theta join operation, which finds the cartesian product but specifically leaves
+              out the tuples that do not satisfy the condition.</li>
+          </ul>
+          <br>
+          <br>
+          <img src="/Users/nickciambrone/Desktop/Screen Shot 2019-04-24 at 1.33.18 PM.png" alt="">
+        </div>
+      </section>
+
+      <section class="bg-apple">
+        <div class="wrap size-80">
+          <ul>
+            <li>Performing a selection operation after the theta join requires every tuple from the resulting relation
+              to be evaluated for the select condtion</li>
+            <li>If the condtions each refer to a column from only one of the relations, it is more efficient to apply
+              the select operation on each of the relations beforehand, then to find the cartesian product of these
+              resulting relations</li>
+          </ul>
+          <br><br>
+          <img src="/Users/nickciambrone/Desktop/Screen Shot 2019-04-24 at 1.46.27 PM.png" alt=""><br><br>
+          <img src="/Users/nickciambrone/Desktop/eq2.png" alt="">
+          <p>The same applies for projections:</p>
+          <img src="/Users/nickciambrone/Desktop/proj81.png" alt="">
+        </div>
+      </section>
+      <section class="bg-apple">
+        <div class="wrap size-80">
+          <ul>
+            <li>
+              Applying a select operation on the result of a negation is not optimal.
+            </li>
+            <li>It is more efficient to apply the selection individually on each table, and negate the resulting
+              relations. </li>
+            <li>It uses less disk reads because when we are performing the set difference step, it reduces the number of
+              comparisons that we need to do.</li>
+          </ul>
+          <img src="/Users/nickciambrone/Desktop/11.png" alt="">
+          <br><br>
+          <p>
+            When performing a union and a projection, it is more efficient to apply the projections on the individual
+            tables, then applying the union on those resulting relations.
+          </p>
+          <img src="/Users/nickciambrone/Desktop/realLast.png" alt="">
+        </div>
+      </section>
+      <section class="bg-apple">
+        <div class="wrap size-80">
+          <h1>Optimize this query:</h1>
+          <img src="/Users/nickciambrone/Desktop/notOptimalONe.jpeg" alt="">
+        </div>
+      </section>
+      <section class="bg-apple">
+        <div class="wrap size-80">
+          <h1>Answer:</h1>
+          <img src="/Users/nickciambrone/Desktop/optimalOne.jpeg" alt="">
+        </div>
+      </section>
+      <section class="bg-apple">
+        <div class="wrap size-80">
+          <h1>Optimize this query:</h1>
+          <img src="/Users/nickciambrone/Desktop/notOptimalTwo.jpeg" alt="">
+        </div>
+      </section>
+      <section class="bg-apple">
+        <div class="wrap size-80">
+          <h1>Answer:</h1>
+          <img src="/Users/nickciambrone/Desktop/optimalTwo.jpeg" alt="">
+        </div>
+      </section>
+      <section class="bg-apple">
+        <div class="wrap size-80">
+          <p>
+            Query optimization is an important part of RDBMS. In our class, we learned how to use relational algebra to
+            express MySql queries, but nothing about which operations are more efficient.
+            In cases like our project, optimizing the query does not have much of an impact. This is because we were
+            working with a very small database. But what about when the database has 100,000 rows and 12 columns?
+            In such an instance, understanding how to optimize your queries can lead to a significant decrease in run
+            time. You do not want the user to be waiting for more than a second after making a request for information
+            out of your database.
+          </p>
+        </div>
+      </section>
+      <section class="bg-apple">
+        <div class="wrap size-55">
+            <div class="wrap size-55">
+                SELECT s.rating
+                FROM sailor s, boat b
+                WHERE s.sid = b.sid AND b.color = 'red'
+                <ul><li>
+                    This query can be expressed in relational algebra in a number of ways.
+    
+                </li>
+              <li>            When a user queries a database, it is parsed, and then presented to the query optimizer.
+                </li>
+                <li>The query optimizer identifies alternative plans and executes the one with the least disk reads necessary.</li>
+              </ul>
+              </div>
+              <br><br>
+          <pre height = "120px" style="color:white; text-align: center">Query Parser</pre>
+          <div class="row"><div class="col-4"></div><div class="col-4">&darr;</div><div class="col-4"></div></div>
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-8">
+          <pre style="color:white; text-align: center">Query Optimizer
+            <pre style="color:white; text-align: center"> Plan Generator</pre>
+            <pre style="color:white; text-align: center"> Plan Cost Estimator</pre>
+          </pre>
+        </div>
+          <div class="col-3">
+            <div class="row"><div class="col-1"><br><br><br><br> &rarr;</div><div class="col-2"><br><br><br><br> &rarr;</div><div class="col-9">            <pre style = "color:white;">Catalog Manager</pre>
+            </div></div>
+          
+          </div>
+          
+          </div>
+          <div class="row"><div class="col-4"></div><div class="col-4">&darr;</div><div class="col-4"></div></div>
+          <pre style="color:white; text-align: center">Query Plan Evaluator</pre>
+        </div>
+      </section>
+      <section class="bg-apple">
+         <h1>Questions?</h1>
+      </section>
+    </article>
+  </main>
+  <!--main-->
+  <!-- Required -->
+
+  <script src="../static/js/webslides.js"></script>
+
+  <script>
+    window.ws = new WebSlides();
+  </script>
+
+  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+  <script defer src="../static/js/svg-icons.js"></script>
+
+</body>
+
+</html>
